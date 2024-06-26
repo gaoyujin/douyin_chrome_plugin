@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline'"
+    />
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css" />
+    <script type="text/javascript" src="./options.js"></script>
+    <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+    <style>
+      .mb-3 {
+        padding: 20px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div class="mb-3">
+      <label for="basic-url" class="form-label">解析地址</label>
+      <div class="input-group">
+        <span class="input-group-text">地址:</span>
+        <input id="filter-url" type="text" class="form-control" />
+        <button type="button" onclick="openPage()">解析</button>
+      </div>
+      <div class="form-text">
+        只能解析Url为该模式的地址：https://www.douyin.com/*
+      </div>
+    </div>
+  </body>
+</html>
